@@ -14,7 +14,6 @@ def run_tests():
 
     print("{} get_age() - Expected {}. Got {}".format(guitar.name, 95, guitar.get_age()))
     print("{} get_age() - Expected {}. Got {}".format(other.name, 5, other.get_age()))
-    print()
     print("{} is_vintage() - Expected {}. Got {}".format(guitar.name, True, guitar.is_vintage()))
     print("{} is_vintage() - Expected {}. Got {}".format(other.name, False, other.is_vintage()))
 
