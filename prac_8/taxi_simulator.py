@@ -14,10 +14,8 @@ def main():
     while menu_choice != "q":
         if menu_choice == "c":
             print("Taxis available: ")
-            taxi_number = 0
-            for taxi in taxis:
+            for taxi_number, taxi in enumerate(taxis):
                 print("{} - {}".format(taxi_number, taxi))
-                taxi_number += 1
             taxi_choice = int(input("Choose Taxi: "))
             current_taxi = taxis[taxi_choice]
             print("Bill to date: ${:.2f}".format(bill_to_date))
